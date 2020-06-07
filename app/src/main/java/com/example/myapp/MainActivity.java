@@ -30,24 +30,6 @@ public class MainActivity extends AppCompatActivity {
         btndetails.addRule(RelativeLayout.CENTER_HORIZONTAL);
         btndetails.addRule(RelativeLayout.CENTER_VERTICAL);
         mylayout.addView(mybutton,btndetails);
-
-        EditText ed = new EditText(this);
-        mybutton.setId(1);
-        ed.setId(2);
-
-
-        RelativeLayout.LayoutParams edetails =  new RelativeLayout.LayoutParams(
-                RelativeLayout.LayoutParams.WRAP_CONTENT,
-                RelativeLayout.LayoutParams.WRAP_CONTENT
-        );
-        edetails.addRule(RelativeLayout.ABOVE,mybutton.getId());
-        edetails.addRule(RelativeLayout.CENTER_HORIZONTAL);
-
-        edetails.setMargins(0,0,0,50);
-        mylayout.addView(ed,edetails);
-
-
-
         setContentView(mylayout);
     }
 }
